@@ -1,0 +1,91 @@
+/* Toggle Button Styles */
+.ldm-toggle {
+    position: fixed;
+    top: 20px;
+    /* Adjust this value to move the toggle button lower */
+    right: 10px;
+    width: 50px;
+    /* Make the toggle button smaller */
+    height: 25px;
+    /* Adjust height to match new width */
+    background: #f0f0f0;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    /* Adjust padding to fit smaller size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.ldm-toggle .pill {
+    width: 20px;
+    /* Make the pill smaller */
+    height: 20px;
+    /* Adjust height to match new width */
+    background: #333;
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+    position: relative;
+    left: 0;
+    /* Start at the left side */
+}
+
+body.dark-mode .ldm-toggle {
+    background: #333;
+}
+
+body.dark-mode .ldm-toggle .pill {
+    background: #f0f0f0;
+    /* Change pill color to white in dark mode */
+    transform: translateX(100%);
+    /* Move to the right side */
+}
+
+/* Light/Dark Mode Styles */
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    /* Use a clean, readable font */
+    line-height: 1.6;
+    /* Increase line height for better readability */
+}
+
+body.dark-mode {
+    background: #333;
+    color: #f0f0f0;
+}
+
+body {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Link Styles */
+a {
+    color: #1a73e8;
+    /* Ensure links are clearly visible */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover for links */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    /* Ensure headings use the same color as body text */
+    margin-top: 1em;
+    /* Add space above headings */
+    margin-bottom: 0.5em;
+    /* Add space below headings */
+}
